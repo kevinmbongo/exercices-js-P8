@@ -1,3 +1,16 @@
 //votre code ici
+function pairNumbers(min, max) {
+  let result = [];
+  let i = min;
 
-export default pairNumbers
+  while (i <= max) {
+    if (i % 2 === 0) {
+      result.push(i);
+    }
+    i++;
+  }
+
+  return result.join(",");
+}
+console.log(pairNumbers(1, 10));
+export default pairNumbers;
